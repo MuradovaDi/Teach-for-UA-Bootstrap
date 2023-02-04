@@ -1,16 +1,16 @@
-.heading__paragraph {
+.section-header__description {
   font-family: "Basis Grotesque Pro Light";
   font-style: normal;
   font-weight: 300;
 }
 
-.accordion__panel {
+.button {
   font-family: "Basis Grotesque Pro";
   font-style: normal;
   font-weight: 400;
 }
 
-.accordion__btn, .heading__main, .heading__sub {
+.section-header__title, .section-header__subtitle {
   font-family: "Basis Grotesque Pro Bold";
   font-style: normal;
   font-weight: 700;
@@ -29,114 +29,85 @@ body {
           box-sizing: boarding-box;
 }
 
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.about__content {
+  padding: 150px 35px 0px 210px;
+}
+.about__tabs {
+  margin-top: 100px;
+  width: 100%;
 }
 
-.support__container {
-  padding: 150px 0px 150px 210px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.heading__sub {
+.section-header__subtitle {
   text-transform: uppercase;
   color: #0536FC;
   opacity: 0.9;
 }
-
-.heading__main {
+.section-header__title {
   font-size: 36px;
   line-height: 40px;
   text-transform: uppercase;
   margin: 30px 0px 70px 0px;
 }
-
-.heading__paragraph {
+.section-header__description {
   opacity: 0.35;
 }
 
-.support__accordion {
-  margin-top: 250px;
-  margin-left: 75px;
+.nav-link {
+  color: #0536FC;
 }
 
-.accordion__panel {
-  max-width: 445px;
-  opacity: 0.6;
-  display: none;
-  overflow: hidden;
-  text-transform: none;
-  margin-top: 70px;
+.who__container {
+  padding: 427px 0px 0px 0px;
+  background-image: url(./img/bg-who.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.who__card {
+  padding: 120px 20px 130px 120px;
+  background-color: #fff;
 }
 
-.accordion__icon {
-  padding: 0px 7px;
-}
-
-.accordion__minus {
-  width: 15px;
-  height: 1.4px;
-  background-color: #000000;
-  display: none;
-}
-
-.accordion__btn {
-  border: none;
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-  background: none;
-  padding-top: 30px;
-  padding-bottom: 70px;
+.button {
+  margin-top: 100px;
+  background: #0536FC;
   text-transform: uppercase;
-  cursor: pointer;
-  width: 100%;
-  text-align: left;
+  color: #FFFFFF;
+  padding: 15px 35px;
 }
 
-.accordion__btn_active .accordion__panel, .accordion__btn_active .accordion__minus {
-  display: block;
-}
-.accordion__btn_active .accordion__plus {
-  display: none;
-}
-
-@media screen and (max-width: 1070px) {
-  .support__container {
-    padding: 150px 0px 150px 100px;
-    display: block;
+@media screen and (max-width: 1140px) {
+  .about__content {
+    padding: 150px 35px 0px 100px;
   }
-  .support__accordion {
-    margin-top: 50px;
-    width: 75vw;
+  .who__container {
+    padding: 300px 0px 0px 0px;
   }
-  .accordion__panel {
-    max-width: 100%;
+  .who__card {
+    padding: 50px 20px 50px 60px;
   }
 }
-@media screen and (max-width: 700px) {
-  .support__container {
-    padding: 50px 0px 50px 50px;
-  }
-  .heading__main {
+@media screen and (max-width: 850px) {
+  .section-header__title {
+    font-size: 30px;
+    line-height: 34px;
     margin: 30px 0px 30px 0px;
   }
-  .support__accordion {
-    margin-left: 0px;
+  .about__content {
+    padding: 50px 35px 0px 50px;
   }
-  .accordion__btn {
-    padding-bottom: 30px;
+  .about__tabs {
+    margin-top: 50px;
   }
-  .accordion__panel {
-    margin-top: 25px;
+  .who__container {
+    padding: 100px 0px 0px 0px;
+  }
+  .button {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .section-header__title {
+    font-size: 25px;
+    line-height: 29px;
   }
 }
